@@ -9,10 +9,10 @@
 export type _Longest<T1 extends any[], T2 extends any[]> = any[] extends T1
   ? T1
   : any[] extends T2
-  ? T2
-  : Exclude<keyof T1, keyof T2> extends never
-  ? T2
-  : T1
+    ? T2
+    : Exclude<keyof T1, keyof T2> extends never
+      ? T2
+      : T1
 
 /**
  * Returns the longest of up to 10 different tuples.

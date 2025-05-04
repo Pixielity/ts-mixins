@@ -8,6 +8,6 @@
  *
  * @internal
  */
-declare const copyProps: (dest: object, src: object, exclude?: string[]) => void;
+declare const copyProps: (dest: object, src: object, exclude?: string[]) => void
 
-export { copyProps };
+export { copyProps }

@@ -12,6 +12,6 @@
  *
  * @internal
  */
-declare const proxyMix: (ingredients: any[], prototype?: Object) => any;
+declare const proxyMix: (ingredients: any[], prototype?: Object) => any
 
-export { proxyMix };
+export { proxyMix }

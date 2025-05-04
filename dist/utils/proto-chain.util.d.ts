@@ -10,6 +10,6 @@
  *
  * @internal
  */
-declare const protoChain: (obj: object, currentChain?: object[]) => object[];
+declare const protoChain: (obj: object, currentChain?: object[]) => object[]
 
-export { protoChain };
+export { protoChain }

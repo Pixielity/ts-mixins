@@ -5,10 +5,10 @@
  * @property {T[]} [key] - Array of decorators for a property
  */
 interface ObjectOfDecorators<T extends PropertyDecorator | MethodDecorator> {
-    /**
-     * Array of decorators for a property.
-     */
-    [key: string]: T[];
+  /**
+   * Array of decorators for a property.
+   */
+  [key: string]: T[]
 }
 
-export type { ObjectOfDecorators };
+export type { ObjectOfDecorators }

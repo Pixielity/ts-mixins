@@ -1,4 +1,4 @@
-import { mixins } from "./mixins-map.tracking"
+import { mixins } from './mixins-map.tracking'
 
 /**
  * Checks if an instance has a mixin in its prototype chain.
@@ -26,7 +26,7 @@ export const hasMixin = <M>(
   mixin: abstract new (...args: any[]) => M,
 ): instance is M => {
   if (!instance) return false
-  
+
   // Direct instanceof check
   if (instance instanceof mixin) return true
 
@@ -51,10 +51,10 @@ export const hasMixin = <M>(
     frontier.forEach((item) => {
       // Get mixins for this constructor or use its parent constructor if it's not Object
       const itemPrototype = Object.getPrototypeOf(item.prototype)
-      const itemConstituents = (item as any).mixins ?? mixins.get(item) ?? 
-        (itemPrototype && 
-         itemPrototype.constructor && 
-         itemPrototype.constructor !== Object)
+      const itemConstituents =
+        ((item as any).mixins ??
+        mixins.get(item) ??
+        (itemPrototype && itemPrototype.constructor && itemPrototype.constructor !== Object))
           ? [itemPrototype.constructor]
           : []
 

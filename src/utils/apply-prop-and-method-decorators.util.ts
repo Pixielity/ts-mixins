@@ -1,4 +1,4 @@
-import type { PropertyAndMethodDecorators } from "../interfaces/property-and-method-decorators.interface"
+import type { PropertyAndMethodDecorators } from '../interfaces/property-and-method-decorators.interface'
 
 /**
  * Applies property and method decorators to a target object.
@@ -49,7 +49,8 @@ export const applyPropAndMethodDecorators = (
 
       // For static method decorators, we need to ensure they're called with both
       // the original class and the mixed class
-      if (target.constructor === Function) { // This is a static context
+      if (target.constructor === Function) {
+        // This is a static context
         // We've already applied the decorators to the target (mixed class) above
         // Now we need to apply them to the original classes as well
         for (const originalTarget of originalTargets) {

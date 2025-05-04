@@ -9,6 +9,6 @@
  *
  * @internal
  */
-declare const unique: <T>(arr: T[]) => T[];
+declare const unique: <T>(arr: T[]) => T[]
 
-export { unique };
+export { unique }

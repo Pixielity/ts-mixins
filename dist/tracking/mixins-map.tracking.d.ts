@@ -4,6 +4,6 @@
  *
  * @internal
  */
-declare const mixins: WeakMap<any, Function[]>;
+declare const mixins: WeakMap<any, Function[]>
 
-export { mixins };
+export { mixins }

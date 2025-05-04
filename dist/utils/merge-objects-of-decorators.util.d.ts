@@ -1,4 +1,4 @@
-import { ObjectOfDecorators } from '../interfaces/object-of-decorators.interface.js';
+import { ObjectOfDecorators } from '../interfaces/object-of-decorators.interface.js'
 
 /**
  * Merges two objects of decorators into one.
@@ -13,6 +13,9 @@ import { ObjectOfDecorators } from '../interfaces/object-of-decorators.interface
  *
  * @internal
  */
-declare const mergeObjectsOfDecorators: <T extends PropertyDecorator | MethodDecorator>(o1: ObjectOfDecorators<T>, o2: ObjectOfDecorators<T>) => ObjectOfDecorators<T>;
+declare const mergeObjectsOfDecorators: <T extends PropertyDecorator | MethodDecorator>(
+  o1: ObjectOfDecorators<T>,
+  o2: ObjectOfDecorators<T>,
+) => ObjectOfDecorators<T>
 
-export { mergeObjectsOfDecorators };
+export { mergeObjectsOfDecorators }

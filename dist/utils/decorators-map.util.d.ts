@@ -1,7 +1,7 @@
-import { Class } from '../types/class.type.js';
-import { Decorators } from '../interfaces/decorators.interface.js';
-import '../interfaces/property-and-method-decorators.interface.js';
-import '../interfaces/object-of-decorators.interface.js';
+import { Class } from '../types/class.type.js'
+import { Decorators } from '../interfaces/decorators.interface.js'
+import '../interfaces/property-and-method-decorators.interface.js'
+import '../interfaces/object-of-decorators.interface.js'
 
 /**
  * Map to store decorators for classes.
@@ -10,6 +10,6 @@ import '../interfaces/object-of-decorators.interface.js';
  *
  * @internal
  */
-declare const decorators: Map<Class, Decorators>;
+declare const decorators: Map<Class, Decorators>
 
-export { decorators };
+export { decorators }

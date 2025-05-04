@@ -1,5 +1,5 @@
-import { PropertyAndMethodDecorators } from './property-and-method-decorators.interface.js';
-import './object-of-decorators.interface.js';
+import { PropertyAndMethodDecorators } from './property-and-method-decorators.interface.js'
+import './object-of-decorators.interface.js'
 
 /**
  * Interface for all types of decorators organized by target.
@@ -9,18 +9,18 @@ import './object-of-decorators.interface.js';
  * @property {PropertyAndMethodDecorators} [instance] - Instance property and method decorators
  */
 interface Decorators {
-    /**
-     * Class decorators.
-     */
-    class?: ClassDecorator[];
-    /**
-     * Static property and method decorators.
-     */
-    static?: PropertyAndMethodDecorators;
-    /**
-     * Instance property and method decorators.
-     */
-    instance?: PropertyAndMethodDecorators;
+  /**
+   * Class decorators.
+   */
+  class?: ClassDecorator[]
+  /**
+   * Static property and method decorators.
+   */
+  static?: PropertyAndMethodDecorators
+  /**
+   * Instance property and method decorators.
+   */
+  instance?: PropertyAndMethodDecorators
 }
 
-export type { Decorators };
+export type { Decorators }

@@ -1,5 +1,5 @@
-import { unique } from "../utils/unique.util"
-import type { ObjectOfDecorators } from "../interfaces/object-of-decorators.interface"
+import { unique } from '../utils/unique.util'
+import type { ObjectOfDecorators } from '../interfaces/object-of-decorators.interface'
 
 /**
  * Merges two objects of decorators into one.
@@ -19,7 +19,10 @@ export const mergeObjectsOfDecorators = <T extends PropertyDecorator | MethodDec
   o2: ObjectOfDecorators<T>,
 ): ObjectOfDecorators<T> => {
   // Get all keys from both objects
-  const allKeys = unique([...Object.getOwnPropertyNames(o1 || {}), ...Object.getOwnPropertyNames(o2 || {})])
+  const allKeys = unique([
+    ...Object.getOwnPropertyNames(o1 || {}),
+    ...Object.getOwnPropertyNames(o2 || {}),
+  ])
 
   // Create a new object with merged decorators for each key
   const mergedObject: ObjectOfDecorators<T> = {}

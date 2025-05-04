@@ -10,6 +10,6 @@
  *
  * @internal
  */
-declare const nearestCommonProto: (...objs: object[]) => object | undefined;
+declare const nearestCommonProto: (...objs: object[]) => object | undefined
 
-export { nearestCommonProto };
+export { nearestCommonProto }

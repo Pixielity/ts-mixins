@@ -1,5 +1,5 @@
-import { Mixin } from "../mixin"
-import type { Class } from "../types/class.type"
+import { Mixin } from '../mixin'
+import type { Class } from '../types/class.type'
 
 /**
  * A decorator version of the `Mixin` function.
@@ -37,7 +37,7 @@ export const Mix =
     const mixedClass = Mixin(...ingredients.concat([decoratedClass]))
 
     // Preserve the name of the decorated class
-    Object.defineProperty(mixedClass, "name", {
+    Object.defineProperty(mixedClass, 'name', {
       value: decoratedClass.name,
       writable: false,
     })

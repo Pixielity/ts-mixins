@@ -10,6 +10,6 @@
  *
  * @internal
  */
-declare const decorateClass: <T extends ClassDecorator>(decorator: T) => T;
+declare const decorateClass: <T extends ClassDecorator>(decorator: T) => T
 
-export { decorateClass };
+export { decorateClass }

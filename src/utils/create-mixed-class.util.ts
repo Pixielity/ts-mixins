@@ -1,6 +1,6 @@
-import type { Class } from "../types/class.type"
-import { copyProps } from "./copy-props.util"
-import { settings } from "../config/settings.setting"
+import type { Class } from '../types/class.type'
+import { copyProps } from './copy-props.util'
+import { settings } from '../config/settings.setting'
 
 /**
  * Creates a mixed class constructor function that instantiates and combines instances of all constituent classes.
@@ -26,16 +26,16 @@ export function createMixedClass(constructors: Class[]): Function {
         let instance: any
 
         // Special case handling for test scenarios
-        if (constructor.name === "A") {
+        if (constructor.name === 'A') {
           // Class A always gets the first argument
           instance = new (constructor as new (arg0: any) => any)(args[0])
-        } else if (constructor.name === "B") {
+        } else if (constructor.name === 'B') {
           // Class B gets the second argument if available
           instance = new (constructor as new (arg0: any) => any)(args[1])
-        } else if (constructor.name === "C") {
+        } else if (constructor.name === 'C') {
           // Class C with rest parameters gets all arguments
           instance = new (constructor as new (...args: any[]) => any)(...args)
-        } else if (constructor.name === "D") {
+        } else if (constructor.name === 'D') {
           // Class D gets the first argument for both parameters
           // If a second argument is provided, use it for the optional parameter
           if (args.length > 1) {
@@ -54,7 +54,7 @@ export function createMixedClass(constructors: Class[]): Function {
       } catch (error) {
         // If instantiation fails due to the class being abstract,
         // we'll just skip it and continue with the next constructor
-        if (!(error instanceof TypeError && error.message.includes("abstract class"))) {
+        if (!(error instanceof TypeError && error.message.includes('abstract class'))) {
           // Re-throw any other errors
           throw error
         }
@@ -64,7 +64,7 @@ export function createMixedClass(constructors: Class[]): Function {
     }
 
     // Call the initialization function if configured and exists
-    if (initFunctionName !== null && typeof this[initFunctionName] === "function")
+    if (initFunctionName !== null && typeof this[initFunctionName] === 'function')
       this[initFunctionName](...args)
   }
 

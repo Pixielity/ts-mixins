@@ -10,6 +10,6 @@
  *
  * @internal
  */
-declare const decorateMember: <T extends PropertyDecorator | MethodDecorator>(decorator: T) => T;
+declare const decorateMember: <T extends PropertyDecorator | MethodDecorator>(decorator: T) => T
 
-export { decorateMember };
+export { decorateMember }

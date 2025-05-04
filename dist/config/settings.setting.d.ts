@@ -1,4 +1,4 @@
-import { Settings } from '../interfaces/settings.interface.js';
+import { Settings } from '../interfaces/settings.interface.js'
 
 /**
  * Default configuration settings for TS Mixins.
@@ -28,6 +28,6 @@ import { Settings } from '../interfaces/settings.interface.js';
  * // Configure prototype strategy
  * settings.prototypeStrategy = 'proxy';
  */
-declare const settings: Settings;
+declare const settings: Settings
 
-export { settings };
+export { settings }

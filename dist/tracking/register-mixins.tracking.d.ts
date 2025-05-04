@@ -9,6 +9,6 @@
  *
  * @internal
  */
-declare const registerMixins: (mixedClass: any, constituents: Function[]) => void;
+declare const registerMixins: (mixedClass: any, constituents: Function[]) => void
 
-export { registerMixins };
+export { registerMixins }

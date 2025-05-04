@@ -12,6 +12,6 @@
  *
  * @internal
  */
-declare const softMixProtos: (ingredients: any[], constructor: Function) => object;
+declare const softMixProtos: (ingredients: any[], constructor: Function) => object
 
-export { softMixProtos };
+export { softMixProtos }
