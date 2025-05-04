@@ -1,6 +1,6 @@
 {
   "name": "@pixielity/ts-mixins",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A powerful TypeScript mixin library with full type safety, decorator support, and flexible configuration",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
