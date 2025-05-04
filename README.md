@@ -18,7 +18,7 @@ A powerful TypeScript mixin library with full type safety, decorator support, an
 
 ## Installation
 
-\`\`\`bash
+```bash
 
 # npm
 
@@ -31,11 +31,11 @@ yarn add ts-mixins
 # pnpm
 
 pnpm add ts-mixins
-\`\`\`
+```
 
 ## Basic Usage
 
-\`\`\`typescript
+```typescript
 import { Mixin } from 'ts-mixins';
 
 // Define your classes
@@ -58,11 +58,11 @@ const LoggableSerializable = Mixin(Logger, Serializable);
 const instance = new LoggableSerializable();
 instance.log('Hello, world!'); // [LOG]: Hello, world!
 console.log(instance.serialize()); // {"message":"Hello, world!"}
-\`\`\`
+```
 
 ## Using the Decorator
 
-\`\`\`typescript
+```typescript
 import { Mix } from 'ts-mixins';
 
 class Logger {
@@ -89,13 +89,13 @@ this.name = name;
 const user = new User('John');
 user.log('User created'); // [LOG]: User created
 console.log(user.serialize()); // {"name":"John"}
-\`\`\`
+```
 
 ## Configuration
 
 TS Mixins provides several configuration options to customize its behavior:
 
-\`\`\`typescript
+```typescript
 import { settings } from 'ts-mixins';
 
 // Configure initialization function
@@ -109,7 +109,7 @@ settings.staticsStrategy = 'proxy'; // 'copy' (default) or 'proxy'
 
 // Configure decorator inheritance
 settings.decoratorInheritance = 'direct'; // 'deep' (default), 'direct', or 'none'
-\`\`\`
+```
 
 ### Configuration Options
 
@@ -124,7 +124,7 @@ settings.decoratorInheritance = 'direct'; // 'deep' (default), 'direct', or 'non
 
 ### Working with Abstract Classes
 
-\`\`\`typescript
+```typescript
 import { Mixin } from 'ts-mixins';
 
 abstract class Entity {
@@ -157,11 +157,11 @@ const product = new EntityProduct('abc123', 'Laptop', 999);
 console.log(product.id); // abc123
 console.log(product.name); // Laptop
 console.log(product.getType()); // Product
-\`\`\`
+```
 
 ### Tracking Mixins
 
-\`\`\`typescript
+```typescript
 import { Mixin, hasMixin, getMixinsForClass } from 'ts-mixins';
 
 class A {
@@ -182,11 +182,11 @@ console.log(hasMixin(instance, B)); // true
 // Get all mixins for a class
 const mixins = getMixinsForClass(AB);
 console.log(mixins); // [A, B]
-\`\`\`
+```
 
 ### Decorator Inheritance
 
-\`\`\`typescript
+```typescript
 import { Mixin, Decorate } from 'ts-mixins';
 
 function LogClass(target: any) {
@@ -210,7 +210,7 @@ propertyB = 'B';
 
 // The mixed class will inherit the decorators from A
 const AB = Mixin(A, B);
-\`\`\`
+```
 
 ## API Reference
 

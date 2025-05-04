@@ -6,14 +6,14 @@ This project follows [Conventional Commits](https://www.conventionalcommits.org/
 
 Each commit message consists of a **header**, a **body**, and a **footer**. The header has a special format that includes a **type**, an optional **scope**, and a **subject**:
 
-\`\`\`plaintext
+```plaintext
 <type>(<scope>): <subject>
 <BLANK LINE>
 
 <body>
 <BLANK LINE>
 <footer>
-\`\`\`
+```
 
 The **header** is mandatory, and the **scope** of the header is optional.
 
@@ -55,31 +55,31 @@ The footer should contain any information about **Breaking Changes** and is also
 
 ## Examples
 
-\`\`\`plaintext
+```plaintext
 feat(helpers): add new PartialType helper
 
 Add a new helper function that creates a type with all properties of the original type set to optional.
 
 Closes #123
-\`\`\`
+```
 
-\`\`\`plaintext
+```plaintext
 fix(utils): handle edge case in inheritValidationMetadata
 
 The function was not properly handling cases where the parent class had no validation metadata.
 
 Fixes #456
-\`\`\`
+```
 
-\`\`\`plaintext
+```plaintext
 docs(readme): update installation instructions
 
 Update the README with more detailed installation instructions and examples.
-\`\`\`
+```
 
-\`\`\`plaintext
+```plaintext
 chore(deps): update dependency typescript to v5.0.4
-\`\`\`
+```
 
 ## Commit Message Examples
 
@@ -99,17 +99,17 @@ Here are some examples of valid commit messages:
 
 You can use the following command to commit your changes:
 
-\`\`\`bash
+```bash
 git commit -m "type(scope): subject"
-\`\`\`
+```
 
 For example:
 
-\`\`\`bash
+```bash
 git commit -m "feat(helpers): add new PartialType helper"
-\`\`\`
+```
 
 Or use the interactive commit tool:
 
-\`\`\`bash
+```bash
 npm run commit

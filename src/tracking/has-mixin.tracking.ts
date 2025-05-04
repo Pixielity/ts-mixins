@@ -12,14 +12,14 @@ import { mixins } from "./mixins-map.tracking"
  * @returns True if the instance has the mixin, false otherwise
  *
  * @example
- * \`\`\`typescript
+ * ```typescript
  * const AB = Mixin(A, B);
  * const instance = new AB();
  *
  * if (hasMixin(instance, A)) {
  *   // instance has A
  * }
- * \`\`\`
+ * ```
  */
 export const hasMixin = <M>(
   instance: any,

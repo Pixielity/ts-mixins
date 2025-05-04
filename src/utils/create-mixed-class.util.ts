@@ -65,7 +65,7 @@ export function createMixedClass(constructors: Class[]): Function {
 
     // Call the initialization function if configured and exists
     if (initFunctionName !== null && typeof this[initFunctionName] === "function")
-      this[initFunctionName].apply(this, args)
+      this[initFunctionName](...args)
   }
 
   // Set up proper instanceof behavior

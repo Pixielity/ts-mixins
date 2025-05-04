@@ -1,0 +1,14 @@
+'use strict';
+
+// src/tracking/mixins-map.tracking.ts
+var mixins = /* @__PURE__ */ new WeakMap();
+
+// src/tracking/register-mixins.tracking.ts
+var registerMixins = (mixedClass, constituents) => {
+  mixins.set(mixedClass, constituents);
+};
+if (typeof module !== "undefined") { module.exports = module.exports.default; }
+
+exports.registerMixins = registerMixins;
+//# sourceMappingURL=register-mixins.tracking.js.map
+//# sourceMappingURL=register-mixins.tracking.js.map
