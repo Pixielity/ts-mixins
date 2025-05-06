@@ -1,4 +1,4 @@
-import { Class } from '../types/class.type.js'
+import { Class } from '../types/class.type.js';
 
 /**
  * Finds all constituent classes for a set of classes, including those in the prototype chain and mixins.
@@ -11,6 +11,6 @@ import { Class } from '../types/class.type.js'
  *
  * @internal
  */
-declare const findAllConstituentClasses: (...classes: Class[]) => Class[]
+declare const findAllConstituentClasses: (...classes: Class[]) => Class[];
 
-export { findAllConstituentClasses }
+export { findAllConstituentClasses };

@@ -19,9 +19,6 @@
  * }
  * ```
  */
-declare const hasMixin: <M>(
-  instance: any,
-  mixin: abstract new (...args: any[]) => M,
-) => instance is M
+declare const hasMixin: <M>(instance: any, mixin: abstract new (...args: any[]) => M) => instance is M;
 
-export { hasMixin }
+export { hasMixin };

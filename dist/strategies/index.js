@@ -1,5 +1,15 @@
 'use strict';
 
+/**
+ * @pixielity/ts-mixins v1.0.0
+ * 
+ * Advanced TypeScript mixins package
+ * 
+ * @license MIT
+ * @copyright 2025 Your Name <your.email@example.com>
+ */
+
+
 // src/utils/proto-chain.util.ts
 var protoChain = (obj, currentChain = [obj]) => {
   const proto = Object.getPrototypeOf(obj);
@@ -142,7 +152,6 @@ var proxyMix = (ingredients, prototype = Object.prototype) => new Proxy(
 
 // src/strategies/soft-mix-protos.strategy.ts
 var softMixProtos = (ingredients, constructor) => proxyMix([...ingredients, { constructor }]);
-if (typeof module !== "undefined") { module.exports = module.exports.default; }
 
 exports.getIngredientWithProp = getIngredientWithProp;
 exports.hardMixProtos = hardMixProtos;

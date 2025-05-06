@@ -10,6 +10,6 @@
  *
  * @internal
  */
-declare function combineInitFunctions(prototypes: any[], initFunctionName: string): object
+declare function combineInitFunctions(prototypes: any[], initFunctionName: string): object;
 
-export { combineInitFunctions }
+export { combineInitFunctions };

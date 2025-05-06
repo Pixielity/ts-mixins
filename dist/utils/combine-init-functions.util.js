@@ -1,5 +1,15 @@
 'use strict';
 
+/**
+ * @pixielity/ts-mixins v1.0.0
+ * 
+ * Advanced TypeScript mixins package
+ * 
+ * @license MIT
+ * @copyright 2025 Your Name <your.email@example.com>
+ */
+
+
 // src/utils/combine-init-functions.util.ts
 function combineInitFunctions(prototypes, initFunctionName) {
   const initFunctions = prototypes.map((proto) => proto[initFunctionName]).filter((func) => typeof func === "function");
@@ -8,7 +18,6 @@ function combineInitFunctions(prototypes, initFunctionName) {
   };
   return { [initFunctionName]: combinedInitFunction };
 }
-if (typeof module !== "undefined") { module.exports = module.exports.default; }
 
 exports.combineInitFunctions = combineInitFunctions;
 //# sourceMappingURL=combine-init-functions.util.js.map

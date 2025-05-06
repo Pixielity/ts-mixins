@@ -1,5 +1,15 @@
 'use strict';
 
+/**
+ * @pixielity/ts-mixins v1.0.0
+ * 
+ * Advanced TypeScript mixins package
+ * 
+ * @license MIT
+ * @copyright 2025 Your Name <your.email@example.com>
+ */
+
+
 // src/utils/apply-prop-and-method-decorators.util.ts
 var applyPropAndMethodDecorators = (propAndMethodDecorators, target, originalTargets = []) => {
   const propDecorators = propAndMethodDecorators.property;
@@ -35,7 +45,6 @@ var applyPropAndMethodDecorators = (propAndMethodDecorators, target, originalTar
     }
   }
 };
-if (typeof module !== "undefined") { module.exports = module.exports.default; }
 
 exports.applyPropAndMethodDecorators = applyPropAndMethodDecorators;
 //# sourceMappingURL=apply-prop-and-method-decorators.util.js.map

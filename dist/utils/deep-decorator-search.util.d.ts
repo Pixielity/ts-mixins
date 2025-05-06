@@ -1,7 +1,7 @@
-import { Class } from '../types/class.type.js'
-import { Decorators } from '../interfaces/decorators.interface.js'
-import '../interfaces/property-and-method-decorators.interface.js'
-import '../interfaces/object-of-decorators.interface.js'
+import { Class } from '../types/class.type.js';
+import { Decorators } from '../interfaces/decorators.interface.js';
+import '../interfaces/property-and-method-decorators.interface.js';
+import '../interfaces/object-of-decorators.interface.js';
 
 /**
  * Searches for decorators in all constituent classes, including those in the prototype chain and mixins.
@@ -14,6 +14,6 @@ import '../interfaces/object-of-decorators.interface.js'
  *
  * @internal
  */
-declare const deepDecoratorSearch: (...classes: Class[]) => Decorators
+declare const deepDecoratorSearch: (...classes: Class[]) => Decorators;
 
-export { deepDecoratorSearch }
+export { deepDecoratorSearch };

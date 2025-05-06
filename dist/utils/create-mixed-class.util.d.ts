@@ -1,4 +1,4 @@
-import { Class } from '../types/class.type.js'
+import { Class } from '../types/class.type.js';
 
 /**
  * Creates a mixed class constructor function that instantiates and combines instances of all constituent classes.
@@ -11,6 +11,6 @@ import { Class } from '../types/class.type.js'
  *
  * @internal
  */
-declare function createMixedClass(constructors: Class[]): Function
+declare function createMixedClass(constructors: Class[]): Function;
 
-export { createMixedClass }
+export { createMixedClass };

@@ -1,4 +1,4 @@
-import { Class } from '../types/class.type.js'
+import { Class } from '../types/class.type.js';
 
 /**
  * Gets the constituent classes for a mixin class.
@@ -10,6 +10,6 @@ import { Class } from '../types/class.type.js'
  * const AB = Mixin(A, B);
  * const mixins = getMixinsForClass(AB); // [A, B]
  */
-declare const getMixinsForClass: (clazz: Class) => Function[] | undefined
+declare const getMixinsForClass: (clazz: Class) => Function[] | undefined;
 
-export { getMixinsForClass }
+export { getMixinsForClass };

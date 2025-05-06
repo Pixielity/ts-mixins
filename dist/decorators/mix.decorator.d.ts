@@ -1,4 +1,4 @@
-import { Class } from '../types/class.type.js'
+import { Class } from '../types/class.type.js';
 
 /**
  * A decorator version of the `Mixin` function.
@@ -28,10 +28,8 @@ import { Class } from '../types/class.type.js'
  * instance.methodB(); // 'B'
  * instance.methodC(); // 'C'
  */
-declare const Mix: (...ingredients: Class[]) => (
-  decoratedClass: (abstract new (...args: any[]) => {}) & {
-    name?: any
-  },
-) => any
+declare const Mix: (...ingredients: Class[]) => (decoratedClass: (abstract new (...args: any[]) => {}) & {
+    name?: any;
+}) => any;
 
-export { Mix }
+export { Mix };

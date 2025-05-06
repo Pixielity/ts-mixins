@@ -1,5 +1,15 @@
 'use strict';
 
+/**
+ * @pixielity/ts-mixins v1.0.0
+ * 
+ * Advanced TypeScript mixins package
+ * 
+ * @license MIT
+ * @copyright 2025 Your Name <your.email@example.com>
+ */
+
+
 // src/utils/copy-props.util.ts
 var copyProps = (dest, src, exclude = []) => {
   const props = Object.getOwnPropertyDescriptors(src);
@@ -49,7 +59,6 @@ var hardMixProtos = (ingredients, constructor, exclude = []) => {
   }
   return mixedProto;
 };
-if (typeof module !== "undefined") { module.exports = module.exports.default; }
 
 exports.hardMixProtos = hardMixProtos;
 //# sourceMappingURL=hard-mix-protos.strategy.js.map

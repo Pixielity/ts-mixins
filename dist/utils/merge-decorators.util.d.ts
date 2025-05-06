@@ -1,6 +1,6 @@
-import { Decorators } from '../interfaces/decorators.interface.js'
-import '../interfaces/property-and-method-decorators.interface.js'
-import '../interfaces/object-of-decorators.interface.js'
+import { Decorators } from '../interfaces/decorators.interface.js';
+import '../interfaces/property-and-method-decorators.interface.js';
+import '../interfaces/object-of-decorators.interface.js';
 
 /**
  * Merges two decorator objects into one.
@@ -13,6 +13,6 @@ import '../interfaces/object-of-decorators.interface.js'
  *
  * @internal
  */
-declare const mergeDecorators: (d1: Decorators, d2: Decorators) => Decorators
+declare const mergeDecorators: (d1: Decorators, d2: Decorators) => Decorators;
 
-export { mergeDecorators }
+export { mergeDecorators };

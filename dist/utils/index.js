@@ -1,5 +1,15 @@
 'use strict';
 
+/**
+ * @pixielity/ts-mixins v1.0.0
+ * 
+ * Advanced TypeScript mixins package
+ * 
+ * @license MIT
+ * @copyright 2025 Your Name <your.email@example.com>
+ */
+
+
 // src/utils/apply-prop-and-method-decorators.util.ts
 var applyPropAndMethodDecorators = (propAndMethodDecorators, target, originalTargets = []) => {
   const propDecorators = propAndMethodDecorators.property;
@@ -127,7 +137,10 @@ var unique = (arr) => arr.filter((e, i) => arr.indexOf(e) === i);
 
 // src/utils/merge-objects-of-decorators.util.ts
 var mergeObjectsOfDecorators = (o1, o2) => {
-  const allKeys = unique([...Object.getOwnPropertyNames(o1 || {}), ...Object.getOwnPropertyNames(o2 || {})]);
+  const allKeys = unique([
+    ...Object.getOwnPropertyNames(o1 || {}),
+    ...Object.getOwnPropertyNames(o2 || {})
+  ]);
   const mergedObject = {};
   for (const key of allKeys) {
     const decorators1 = o1 && o1[key] ? [...o1[key]] : [];
@@ -244,7 +257,6 @@ function createMixedClass(constructors) {
   });
   return MixedClass;
 }
-if (typeof module !== "undefined") { module.exports = module.exports.default; }
 
 exports.applyPropAndMethodDecorators = applyPropAndMethodDecorators;
 exports.combineInitFunctions = combineInitFunctions;

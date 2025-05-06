@@ -1,7 +1,7 @@
-import { Class } from '../types/class.type.js'
-import { Decorators } from '../interfaces/decorators.interface.js'
-import '../interfaces/property-and-method-decorators.interface.js'
-import '../interfaces/object-of-decorators.interface.js'
+import { Class } from '../types/class.type.js';
+import { Decorators } from '../interfaces/decorators.interface.js';
+import '../interfaces/property-and-method-decorators.interface.js';
+import '../interfaces/object-of-decorators.interface.js';
 
 /**
  * Gets or creates a decorator object for a class.
@@ -13,6 +13,6 @@ import '../interfaces/object-of-decorators.interface.js'
  *
  * @internal
  */
-declare const getDecoratorsForClass: (clazz: Class) => Decorators
+declare const getDecoratorsForClass: (clazz: Class) => Decorators;
 
-export { getDecoratorsForClass }
+export { getDecoratorsForClass };

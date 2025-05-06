@@ -1,5 +1,5 @@
-import { PropertyAndMethodDecorators } from '../interfaces/property-and-method-decorators.interface.js'
-import '../interfaces/object-of-decorators.interface.js'
+import { PropertyAndMethodDecorators } from '../interfaces/property-and-method-decorators.interface.js';
+import '../interfaces/object-of-decorators.interface.js';
 
 /**
  * Applies property and method decorators to a target object.
@@ -13,10 +13,6 @@ import '../interfaces/object-of-decorators.interface.js'
  *
  * @internal
  */
-declare const applyPropAndMethodDecorators: (
-  propAndMethodDecorators: PropertyAndMethodDecorators,
-  target: Object,
-  originalTargets?: Object[],
-) => void
+declare const applyPropAndMethodDecorators: (propAndMethodDecorators: PropertyAndMethodDecorators, target: Object, originalTargets?: Object[]) => void;
 
-export { applyPropAndMethodDecorators }
+export { applyPropAndMethodDecorators };

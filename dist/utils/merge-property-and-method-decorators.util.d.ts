@@ -1,5 +1,5 @@
-import { PropertyAndMethodDecorators } from '../interfaces/property-and-method-decorators.interface.js'
-import '../interfaces/object-of-decorators.interface.js'
+import { PropertyAndMethodDecorators } from '../interfaces/property-and-method-decorators.interface.js';
+import '../interfaces/object-of-decorators.interface.js';
 
 /**
  * Merges two property and method decorator objects into one.
@@ -13,9 +13,6 @@ import '../interfaces/object-of-decorators.interface.js'
  *
  * @internal
  */
-declare const mergePropertyAndMethodDecorators: (
-  d1: PropertyAndMethodDecorators,
-  d2: PropertyAndMethodDecorators,
-) => PropertyAndMethodDecorators
+declare const mergePropertyAndMethodDecorators: (d1: PropertyAndMethodDecorators, d2: PropertyAndMethodDecorators) => PropertyAndMethodDecorators;
 
-export { mergePropertyAndMethodDecorators }
+export { mergePropertyAndMethodDecorators };

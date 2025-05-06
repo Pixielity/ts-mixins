@@ -21,8 +21,6 @@
  *   myMethod() {}
  * }
  */
-declare const Decorate: <T extends ClassDecorator | PropertyDecorator | MethodDecorator>(
-  decorator: T,
-) => T
+declare const Decorate: <T extends ClassDecorator | PropertyDecorator | MethodDecorator>(decorator: T) => T;
 
-export { Decorate }
+export { Decorate };

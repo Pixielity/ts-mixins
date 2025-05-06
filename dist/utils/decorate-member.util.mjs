@@ -1,3 +1,13 @@
+/**
+ * @pixielity/ts-mixins v1.0.0
+ * 
+ * Advanced TypeScript mixins package
+ * 
+ * @license MIT
+ * @copyright 2025 Your Name <your.email@example.com>
+ */
+
+
 // src/utils/decorators-map.util.ts
 var decorators = /* @__PURE__ */ new Map();
 
@@ -32,7 +42,6 @@ var decorateMember = (decorator) => (object, key, descriptor) => {
     return decorator(object, key);
   }
 };
-if (typeof module !== "undefined") { module.exports = module.exports.default; }
 
 export { decorateMember };
 //# sourceMappingURL=decorate-member.util.mjs.map

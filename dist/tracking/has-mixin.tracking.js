@@ -1,5 +1,15 @@
 'use strict';
 
+/**
+ * @pixielity/ts-mixins v1.0.0
+ * 
+ * Advanced TypeScript mixins package
+ * 
+ * @license MIT
+ * @copyright 2025 Your Name <your.email@example.com>
+ */
+
+
 // src/tracking/mixins-map.tracking.ts
 var mixins = /* @__PURE__ */ new WeakMap();
 
@@ -32,7 +42,6 @@ var hasMixin = (instance, mixin) => {
   }
   return false;
 };
-if (typeof module !== "undefined") { module.exports = module.exports.default; }
 
 exports.hasMixin = hasMixin;
 //# sourceMappingURL=has-mixin.tracking.js.map

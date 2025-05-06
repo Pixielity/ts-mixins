@@ -11,6 +11,6 @@
  *
  * @internal
  */
-declare const getIngredientWithProp: (prop: string | number | symbol, ingredients: any[]) => any
+declare const getIngredientWithProp: (prop: string | number | symbol, ingredients: any[]) => any;
 
-export { getIngredientWithProp }
+export { getIngredientWithProp };

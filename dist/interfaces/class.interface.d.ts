@@ -9,19 +9,14 @@
  * @template StaticType - Static type
  * @template IsAbstract - Whether the class is abstract
  */
-interface ClassInterface<
-  CtorArgs extends any[] = any[],
-  InstanceType = {},
-  StaticType = {},
-  IsAbstract = false,
-> {
-  /**
-   * Constructor function for the class.
-   *
-   * @param args - Constructor arguments
-   * @returns An instance of the class
-   */
-  new (...args: CtorArgs): InstanceType
+interface ClassInterface<CtorArgs extends any[] = any[], InstanceType = {}, StaticType = {}, IsAbstract = false> {
+    /**
+     * Constructor function for the class.
+     *
+     * @param args - Constructor arguments
+     * @returns An instance of the class
+     */
+    new (...args: CtorArgs): InstanceType;
 }
 /**
  * Use intersection type to combine the interface with StaticType.
@@ -31,11 +26,6 @@ interface ClassInterface<
  * @template StaticType - Static type
  * @template IsAbstract - Whether the class is abstract
  */
-type ClassInterfaceWithStatics<
-  CtorArgs extends any[] = any[],
-  InstanceType = {},
-  StaticType = {},
-  IsAbstract = false,
-> = ClassInterface<CtorArgs, InstanceType, StaticType, IsAbstract> & StaticType
+type ClassInterfaceWithStatics<CtorArgs extends any[] = any[], InstanceType = {}, StaticType = {}, IsAbstract = false> = ClassInterface<CtorArgs, InstanceType, StaticType, IsAbstract> & StaticType;
 
-export type { ClassInterface, ClassInterfaceWithStatics }
+export type { ClassInterface, ClassInterfaceWithStatics };

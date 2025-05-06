@@ -7,6 +7,6 @@
  *
  * @internal
  */
-declare const flatten: <T>(arr: T[][]) => T[]
+declare const flatten: <T>(arr: T[][]) => T[];
 
-export { flatten }
+export { flatten };

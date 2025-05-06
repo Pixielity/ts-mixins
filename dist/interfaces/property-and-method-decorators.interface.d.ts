@@ -1,4 +1,4 @@
-import { ObjectOfDecorators } from './object-of-decorators.interface.js'
+import { ObjectOfDecorators } from './object-of-decorators.interface.js';
 
 /**
  * Interface for property and method decorators organized by type.
@@ -7,14 +7,14 @@ import { ObjectOfDecorators } from './object-of-decorators.interface.js'
  * @property {ObjectOfDecorators<MethodDecorator>} [method] - Method decorators
  */
 interface PropertyAndMethodDecorators {
-  /**
-   * Property decorators organized by property name.
-   */
-  property?: ObjectOfDecorators<PropertyDecorator>
-  /**
-   * Method decorators organized by method name.
-   */
-  method?: ObjectOfDecorators<MethodDecorator>
+    /**
+     * Property decorators organized by property name.
+     */
+    property?: ObjectOfDecorators<PropertyDecorator>;
+    /**
+     * Method decorators organized by method name.
+     */
+    method?: ObjectOfDecorators<MethodDecorator>;
 }
 
-export type { PropertyAndMethodDecorators }
+export type { PropertyAndMethodDecorators };

@@ -1,3 +1,13 @@
+/**
+ * @pixielity/ts-mixins v1.0.0
+ * 
+ * Advanced TypeScript mixins package
+ * 
+ * @license MIT
+ * @copyright 2025 Your Name <your.email@example.com>
+ */
+
+
 // src/config/settings.setting.ts
 var settings = {
   initFunction: null,
@@ -5,7 +15,6 @@ var settings = {
   prototypeStrategy: "copy",
   decoratorInheritance: "deep"
 };
-if (typeof module !== "undefined") { module.exports = module.exports.default; }
 
 export { settings };
 //# sourceMappingURL=settings.setting.mjs.map

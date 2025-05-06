@@ -7,9 +7,7 @@ interface Settings {
      * Set to null to disable initialization function calling.
      *
      * @example
-     * ```typescript
      * settings.initFunction = 'init';
-     * ```
      */
     initFunction: string | null;
     /**
@@ -18,9 +16,7 @@ interface Settings {
      * - 'proxy': Proxy static properties (less performant, but reflects changes to source classes)
      *
      * @example
-     * ```typescript
      * settings.staticsStrategy = 'proxy';
-     * ```
      */
     staticsStrategy: 'copy' | 'proxy';
     /**
@@ -29,9 +25,7 @@ interface Settings {
      * - 'proxy': Proxy prototype properties (less performant, but reflects changes to source classes)
      *
      * @example
-     * ```typescript
      * settings.prototypeStrategy = 'proxy';
-     * ```
      */
     prototypeStrategy: 'copy' | 'proxy';
     /**
@@ -41,9 +35,7 @@ interface Settings {
      * - 'none': Don't inherit decorators
      *
      * @example
-     * ```typescript
      * settings.decoratorInheritance = 'direct';
-     * ```
      */
     decoratorInheritance: 'deep' | 'direct' | 'none';
 }

@@ -1,5 +1,15 @@
 'use strict';
 
+/**
+ * @pixielity/ts-mixins v1.0.0
+ * 
+ * Advanced TypeScript mixins package
+ * 
+ * @license MIT
+ * @copyright 2025 Your Name <your.email@example.com>
+ */
+
+
 // src/utils/decorators-map.util.ts
 var decorators = /* @__PURE__ */ new Map();
 
@@ -18,7 +28,10 @@ var unique = (arr) => arr.filter((e, i) => arr.indexOf(e) === i);
 
 // src/utils/merge-objects-of-decorators.util.ts
 var mergeObjectsOfDecorators = (o1, o2) => {
-  const allKeys = unique([...Object.getOwnPropertyNames(o1 || {}), ...Object.getOwnPropertyNames(o2 || {})]);
+  const allKeys = unique([
+    ...Object.getOwnPropertyNames(o1 || {}),
+    ...Object.getOwnPropertyNames(o2 || {})
+  ]);
   const mergedObject = {};
   for (const key of allKeys) {
     const decorators1 = o1 && o1[key] ? [...o1[key]] : [];
@@ -59,7 +72,6 @@ var directDecoratorSearch = (...classes) => {
   if (classDecorators.length === 1) return classDecorators[0];
   return classDecorators.reduce((d1, d2) => mergeDecorators(d1, d2));
 };
-if (typeof module !== "undefined") { module.exports = module.exports.default; }
 
 exports.directDecoratorSearch = directDecoratorSearch;
 //# sourceMappingURL=direct-decorator-search.util.js.map

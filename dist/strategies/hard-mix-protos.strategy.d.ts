@@ -14,10 +14,6 @@
  *
  * @internal
  */
-declare const hardMixProtos: (
-  ingredients: any[],
-  constructor: Function | null,
-  exclude?: string[],
-) => object
+declare const hardMixProtos: (ingredients: any[], constructor: Function | null, exclude?: string[]) => object;
 
-export { hardMixProtos }
+export { hardMixProtos };

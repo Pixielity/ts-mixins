@@ -1,3 +1,13 @@
+/**
+ * @pixielity/ts-mixins v1.0.0
+ * 
+ * Advanced TypeScript mixins package
+ * 
+ * @license MIT
+ * @copyright 2025 Your Name <your.email@example.com>
+ */
+
+
 // src/utils/decorators-map.util.ts
 var decorators = /* @__PURE__ */ new Map();
 
@@ -10,7 +20,6 @@ var getDecoratorsForClass = (clazz) => {
   }
   return decoratorsForClass;
 };
-if (typeof module !== "undefined") { module.exports = module.exports.default; }
 
 export { getDecoratorsForClass };
 //# sourceMappingURL=get-decorators-for-class.util.mjs.map
